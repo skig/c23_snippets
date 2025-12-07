@@ -28,4 +28,5 @@ Examples of multiple new features and keywords:
 - variable declaration after label
 
 ## Links
+[My blogpost describing main C23 features](https://2pif.com/blog/03.html)\
 [A more comprehensive overview of C23 changes](https://en.cppreference.com/w/c/23.html)

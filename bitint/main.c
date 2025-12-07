@@ -6,11 +6,13 @@
 unsigned _BitInt(256) int_256_bits_1 = (unsigned _BitInt(256))1 << 255;
 unsigned _BitInt(256) int_256_bits_2 = (unsigned _BitInt(256))1 << 130;
 
-void print_bitint_bytes(unsigned _BitInt(256) value) {
+void print_bitint_bytes(unsigned _BitInt(256) value)
+{
     unsigned char bytes[sizeof(int_256_bits_2)];
 
     memcpy(bytes, &value, sizeof(value));
-    for (int i = 0; i < sizeof(bytes); i++) {
+    for (int i = 0; i < sizeof(bytes); i++)
+    {
         printf("%02X ", bytes[i]);
     }
     printf("\n");

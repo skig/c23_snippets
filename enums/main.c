@@ -4,7 +4,7 @@
    Uses char underlying type for the msg_type which guarantees
    size of the header of 2 bytes regardless of compilation flags or target platform.
    Can be used with either C23, or with older C standard with compiler extensions enabled. */
-typedef struct __attribute__ ((packed))
+typedef struct __attribute__((packed))
 {
     enum : char
     {
@@ -16,7 +16,7 @@ typedef struct __attribute__ ((packed))
 
 /* Doesn't use underlying type for msg_type which may cause different size of msg_header_pre_c23_t depending
    on compiler options or platform */
-typedef struct __attribute__ ((packed))
+typedef struct __attribute__((packed))
 {
     enum
     {
